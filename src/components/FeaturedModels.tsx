@@ -1,8 +1,11 @@
 
 import React from 'react';
 import ModelCard from './ModelCard';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const FeaturedModels = () => {
+  const { ref: sectionRef, isVisible } = useScrollReveal();
+
   // Mock data - in real app this would come from API
   const featuredModels = [
     {
@@ -76,9 +79,9 @@ const FeaturedModels = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section ref={sectionRef} className="py-16">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className={`text-center mb-12 ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Featured <span className="text-gradient">3D Models</span>
           </h2>
@@ -89,13 +92,19 @@ const FeaturedModels = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredModels.map((model) => (
-            <ModelCard key={model.id} {...model} />
+          {featuredModels.map((model, index) => (
+            <div
+              key={model.id}
+              className={`${isVisible ? 'fade-in-up' : 'opacity-0'}`}
+              style={{ animationDelay: `${0.1 * (index + 1)}s` }}
+            >
+              <ModelCard {...model} />
+            </div>
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <button className="btn-gradient px-8 py-3 rounded-lg font-semibold hover-glow transition-all duration-300">
+        <div className={`text-center mt-12 ${isVisible ? 'fade-in-up stagger-4' : 'opacity-0'}`}>
+          <button className="btn-gradient btn-elastic px-8 py-3 rounded-lg font-semibold hover-glow transition-all duration-300">
             View All Models
           </button>
         </div>
