@@ -5,7 +5,7 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 const FeaturedModels = () => {
   const { ref: sectionRef, isVisible } = useScrollReveal();
 
-  // Updated with more relevant 3D marketplace images
+  // Updated with more specific and working 3D marketplace images
   const featuredModels = [
     {
       id: '1',
@@ -16,7 +16,7 @@ const FeaturedModels = () => {
       category: 'Environment',
       rating: 4.9,
       downloads: 2840,
-      imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center&auto=format',
       tags: ['Cyberpunk', 'Environment', 'Game Ready', 'Low Poly']
     },
     {
@@ -27,7 +27,7 @@ const FeaturedModels = () => {
       category: 'Characters',
       rating: 4.8,
       downloads: 1567,
-      imageUrl: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&h=400&fit=crop&crop=center&auto=format',
       tags: ['Characters', 'Stylized', 'Rigged', 'Animation Ready']
     },
     {
@@ -38,7 +38,7 @@ const FeaturedModels = () => {
       category: 'Architecture',
       rating: 4.7,
       downloads: 3241,
-      imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop&crop=center&auto=format',
       tags: ['Furniture', 'Modern', 'Interior', 'High Quality']
     },
     {
@@ -50,7 +50,7 @@ const FeaturedModels = () => {
       category: 'Props',
       rating: 5.0,
       downloads: 987,
-      imageUrl: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400&h=400&fit=crop&crop=center&auto=format',
       tags: ['Weapons', 'Sci-Fi', 'Game Assets', 'PBR']
     },
     {
@@ -61,7 +61,7 @@ const FeaturedModels = () => {
       category: 'Nature',
       rating: 4.6,
       downloads: 4532,
-      imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop&crop=center&auto=format',
       tags: ['Trees', 'Fantasy', 'Environment', 'Vegetation']
     },
     {
@@ -72,7 +72,7 @@ const FeaturedModels = () => {
       category: 'Abstract',
       rating: 4.4,
       downloads: 2156,
-      imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop&crop=center&auto=format',
       tags: ['Abstract', 'Geometric', 'Motion Graphics', 'Clean']
     }
   ];
