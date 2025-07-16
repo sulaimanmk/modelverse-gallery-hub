@@ -15,13 +15,13 @@ const CreatorSpotlight = () => {
       rating: 4.9,
       followers: 12500,
       totalDownloads: 45600,
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
-      coverImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop',
+      avatar: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=100&h=100&fit=crop&crop=face',
+      coverImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop&crop=center',
       verified: true,
       recentModels: [
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=80&h=80&fit=crop',
-        'https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?w=80&h=80&fit=crop',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=80&h=80&fit=crop'
+        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=80&h=80&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=80&h=80&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=80&h=80&fit=crop&crop=center'
       ]
     },
     {
@@ -32,13 +32,13 @@ const CreatorSpotlight = () => {
       rating: 4.8,
       followers: 8900,
       totalDownloads: 32100,
-      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b69bf0e8?w=100&h=100&fit=crop&crop=face',
-      coverImage: 'https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=400&h=200&fit=crop',
+      avatar: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=100&h=100&fit=crop&crop=face',
+      coverImage: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop&crop=center',
       verified: true,
       recentModels: [
-        'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=80&h=80&fit=crop',
-        'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=80&h=80&fit=crop',
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=80&h=80&fit=crop'
+        'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=80&h=80&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=80&h=80&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=80&h=80&fit=crop&crop=center'
       ]
     },
     {
@@ -49,13 +49,13 @@ const CreatorSpotlight = () => {
       rating: 4.7,
       followers: 15200,
       totalDownloads: 28900,
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
-      coverImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=200&fit=crop',
+      avatar: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop&crop=face',
+      coverImage: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop&crop=center',
       verified: true,
       recentModels: [
-        'https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?w=80&h=80&fit=crop',
-        'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=80&h=80&fit=crop',
-        'https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=80&h=80&fit=crop'
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=80&h=80&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=80&h=80&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=80&h=80&fit=crop&crop=center'
       ]
     }
   ];
@@ -82,6 +82,9 @@ const CreatorSpotlight = () => {
                   src={creator.coverImage} 
                   alt={`${creator.name} cover`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop&crop=center';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               </div>
@@ -95,6 +98,9 @@ const CreatorSpotlight = () => {
                         src={creator.avatar} 
                         alt={creator.name}
                         className="w-16 h-16 rounded-full border-4 border-background object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=100&h=100&fit=crop&crop=face';
+                        }}
                       />
                       {creator.verified && (
                         <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
@@ -152,6 +158,9 @@ const CreatorSpotlight = () => {
                         src={modelImage} 
                         alt={`Recent model ${index + 1}`}
                         className="w-12 h-12 rounded-lg object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=80&h=80&fit=crop&crop=center';
+                        }}
                       />
                     ))}
                   </div>

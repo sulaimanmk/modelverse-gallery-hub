@@ -46,6 +46,9 @@ const ModelCard: React.FC<ModelCardProps> = ({
           src={imageUrl} 
           alt={title}
           className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+          onError={(e) => {
+            e.currentTarget.src = 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center';
+          }}
         />
         
         {/* Enhanced shimmer effect */}
