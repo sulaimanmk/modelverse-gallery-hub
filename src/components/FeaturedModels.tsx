@@ -16,7 +16,7 @@ const FeaturedModels = () => {
       category: 'Environment',
       rating: 4.9,
       downloads: 2840,
-      imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center&auto=format',
+      imageUrl: 'https://images.unsplash.com/photo-1573767291321-c0af2eaf5266?q=80&w=1072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Cyberpunk', 'Environment', 'Game Ready', 'Low Poly']
     },
     {
@@ -27,7 +27,7 @@ const FeaturedModels = () => {
       category: 'Characters',
       rating: 4.8,
       downloads: 1567,
-      imageUrl: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&h=400&fit=crop&crop=center&auto=format',
+      imageUrl: 'https://images.unsplash.com/photo-1680516426618-bde74c53723c?q=80&w=830&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Characters', 'Stylized', 'Rigged', 'Animation Ready']
     },
     {
@@ -50,7 +50,7 @@ const FeaturedModels = () => {
       category: 'Props',
       rating: 5.0,
       downloads: 987,
-      imageUrl: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400&h=400&fit=crop&crop=center&auto=format',
+      imageUrl: 'https://images.unsplash.com/photo-1687283915386-2d48cf000bf7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Weapons', 'Sci-Fi', 'Game Assets', 'PBR']
     },
     {
@@ -72,7 +72,7 @@ const FeaturedModels = () => {
       category: 'Abstract',
       rating: 4.4,
       downloads: 2156,
-      imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop&crop=center&auto=format',
+      imageUrl: 'https://images.unsplash.com/photo-1734613414358-66038a779fed?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Abstract', 'Geometric', 'Motion Graphics', 'Clean']
     }
   ];

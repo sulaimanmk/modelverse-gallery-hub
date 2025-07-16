@@ -47,7 +47,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
           className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
           onError={(e) => {
             // Updated fallback to a working 3D/tech image
-            e.currentTarget.src = 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&h=400&fit=crop&crop=center&auto=format';
+            e.currentTarget.src = 'https://images.unsplash.com/photo-1573767291321-c0af2eaf5266?q=80&w=1072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
           }}
         />
         
