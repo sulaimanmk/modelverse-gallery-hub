@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -47,14 +46,15 @@ const ModelCard: React.FC<ModelCardProps> = ({
           alt={title}
           className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
           onError={(e) => {
+            // Updated fallback to a more relevant 3D/tech image
             e.currentTarget.src = 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center';
           }}
         />
         
-        {/* Enhanced shimmer effect */}
+        {/* Shimmer effect */}
         <div className={`absolute inset-0 animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
         
-        {/* Overlay on Hover with smoother transition */}
+        {/* Overlay on Hover */}
         <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent backdrop-blur-sm transition-all duration-500 flex items-center justify-center ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <Button size="sm" className="btn-gradient btn-elastic transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
             <Eye className="w-4 h-4 mr-2" />
@@ -62,7 +62,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
           </Button>
         </div>
         
-        {/* Top-right actions with enhanced animations */}
+        {/* Top-right actions */}
         <div className="absolute top-3 right-3 flex space-x-2 transform translate-x-4 group-hover:translate-x-0 transition-transform duration-300">
           <Button 
             size="icon" 
@@ -77,7 +77,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
           </Button>
         </div>
         
-        {/* Category Badge with slide animation */}
+        {/* Category Badge */}
         <Badge className="absolute top-3 left-3 bg-green-600/90 backdrop-blur-sm transform -translate-x-4 group-hover:translate-x-0 transition-transform duration-300">
           {category}
         </Badge>
@@ -90,14 +90,14 @@ const ModelCard: React.FC<ModelCardProps> = ({
         )}
       </div>
       
-      {/* Content with staggered animations */}
+      {/* Content */}
       <div className="p-4 space-y-3">
         <div className="transform group-hover:translate-y-0 translate-y-1 transition-transform duration-300">
           <h3 className="font-semibold text-lg mb-1 line-clamp-1 group-hover:text-green-400 transition-colors duration-300">{title}</h3>
           <p className="text-sm text-muted-foreground mb-3">by {creator}</p>
         </div>
         
-        {/* Tags with slide-in effect */}
+        {/* Tags */}
         <div className="flex flex-wrap gap-1 mb-3 transform group-hover:translate-y-0 translate-y-1 transition-transform duration-300 delay-75">
           {tags.slice(0, 3).map((tag, index) => (
             <Badge key={index} variant="secondary" className="text-xs hover:bg-green-500/20 transition-colors duration-200">
@@ -111,7 +111,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
           )}
         </div>
         
-        {/* Stats with enhanced hover effects */}
+        {/* Stats */}
         <div className="flex items-center justify-between mb-4 transform group-hover:translate-y-0 translate-y-1 transition-transform duration-300 delay-100">
           <div className="flex items-center space-x-3 text-sm text-muted-foreground">
             <div className="flex items-center group/stat hover:text-yellow-400 transition-colors duration-200">
@@ -125,7 +125,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
           </div>
         </div>
         
-        {/* Price and Actions with enhanced button */}
+        {/* Price and Actions */}
         <div className="flex items-center justify-between transform group-hover:translate-y-0 translate-y-1 transition-transform duration-300 delay-150">
           <div className="flex items-center space-x-2">
             <span className="text-xl font-bold text-green-400 group-hover:scale-110 transition-transform duration-300">${price}</span>

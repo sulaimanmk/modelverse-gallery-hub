@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ModelCard from './ModelCard';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
@@ -6,7 +5,7 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 const FeaturedModels = () => {
   const { ref: sectionRef, isVisible } = useScrollReveal();
 
-  // Mock data with working image URLs
+  // Updated with more relevant 3D marketplace images
   const featuredModels = [
     {
       id: '1',
@@ -28,7 +27,7 @@ const FeaturedModels = () => {
       category: 'Characters',
       rating: 4.8,
       downloads: 1567,
-      imageUrl: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=400&fit=crop&crop=center',
       tags: ['Characters', 'Stylized', 'Rigged', 'Animation Ready']
     },
     {
@@ -39,7 +38,7 @@ const FeaturedModels = () => {
       category: 'Architecture',
       rating: 4.7,
       downloads: 3241,
-      imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop&crop=center',
       tags: ['Furniture', 'Modern', 'Interior', 'High Quality']
     },
     {
@@ -51,7 +50,7 @@ const FeaturedModels = () => {
       category: 'Props',
       rating: 5.0,
       downloads: 987,
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400&h=400&fit=crop&crop=center',
       tags: ['Weapons', 'Sci-Fi', 'Game Assets', 'PBR']
     },
     {
@@ -62,7 +61,7 @@ const FeaturedModels = () => {
       category: 'Nature',
       rating: 4.6,
       downloads: 4532,
-      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop&crop=center',
       tags: ['Trees', 'Fantasy', 'Environment', 'Vegetation']
     },
     {
@@ -73,7 +72,7 @@ const FeaturedModels = () => {
       category: 'Abstract',
       rating: 4.4,
       downloads: 2156,
-      imageUrl: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop&crop=center',
+      imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop&crop=center',
       tags: ['Abstract', 'Geometric', 'Motion Graphics', 'Clean']
     }
   ];
